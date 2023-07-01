@@ -11,3 +11,7 @@ public func **(_ lhs: Int, _ rhs: UInt) -> Int {
     }
     return result
 }
+
+func == <Root, Value: Equatable>(_ lhs: KeyPath<Root, Value>, _ rhs: Value) -> (Root) -> Bool {
+    { $0[keyPath: lhs] == rhs }
+}

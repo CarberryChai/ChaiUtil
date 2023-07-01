@@ -12,5 +12,6 @@ final class ArrayTest: XCTestCase {
     func testSomeFunction() {
         XCTAssertTrue([1, 2, 4, 6].some(isOdd))
         XCTAssertFalse([].some(isOdd))
+        XCTAssertTrue([1, 2, 4, 6].some(\.self == 2))
     }
 }
