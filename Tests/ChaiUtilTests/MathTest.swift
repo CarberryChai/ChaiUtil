@@ -16,4 +16,21 @@ final class MathTest: XCTestCase {
         XCTAssertTrue(isOdd(1001))
         XCTAssertTrue(isOdd(999))
     }
+
+    func testClamp() {
+        let a = 2.clamped(to: 3...10)
+        let b = 15.clamped(to: 3...10)
+        let c = 7.clamped(to: 3...10)
+
+        let d = 3.clamped(to: 5...)
+        let e = 10.clamped(to: ...7)
+        let f = 8.clamped(to: 0...)
+        XCTAssertEqual(a, 3)
+        XCTAssertEqual(b, 10)
+        XCTAssertEqual(c, 7)
+
+        XCTAssertEqual(d, 5)
+        XCTAssertEqual(e, 7)
+        XCTAssertEqual(f, 8)
+    }
 }
