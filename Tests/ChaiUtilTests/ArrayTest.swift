@@ -14,4 +14,9 @@ final class ArrayTest: XCTestCase {
         XCTAssertFalse([].some(isOdd))
         XCTAssertTrue([1, 2, 4, 6].some(\.self == 2))
     }
+
+    func testTotalProperty() {
+        XCTAssertEqual(Array(1...10).total, 55)
+        XCTAssertEqual([1.2, 3.4].total, 4.6)
+    }
 }
