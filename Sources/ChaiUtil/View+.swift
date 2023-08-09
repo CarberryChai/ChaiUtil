@@ -8,7 +8,7 @@
 import SwiftUI
 
 /// View Extensions
-@available(macOS 10.15, *)
+@available(macOS 10.15, iOS 13.0, *)
 extension View {
     /// horizontal expanding box, it looks like block box in css
     func HBox(_ align: Alignment = .center) -> some View {
@@ -21,4 +21,3 @@ extension View {
             .frame(maxHeight: .infinity, alignment: align)
     }
 }
-
