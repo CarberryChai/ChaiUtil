@@ -11,12 +11,12 @@ import SwiftUI
 @available(macOS 10.15, *)
 extension View {
     /// horizontal expanding box, it looks like block box in css
-    func HBox(_ align: Alignment) -> some View {
+    func HBox(_ align: Alignment = .center) -> some View {
         self
             .frame(maxWidth: .infinity, alignment: align)
     }
 
-    func VBox(_ align: Alignment) -> some View {
+    func VBox(_ align: Alignment = .center) -> some View {
         self
             .frame(maxHeight: .infinity, alignment: align)
     }
