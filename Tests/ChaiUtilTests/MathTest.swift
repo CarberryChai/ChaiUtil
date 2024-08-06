@@ -12,9 +12,9 @@ final class MathTest: XCTestCase {
     func testOdd() {
         XCTAssertTrue(isOdd(1))
         XCTAssertTrue(isOdd(3))
-        XCTAssertTrue(isOdd(101))
-        XCTAssertTrue(isOdd(1001))
-        XCTAssertTrue(isOdd(999))
+        XCTAssertTrue(isOdd(-1))
+        XCTAssertTrue(isOdd(Int8(3)))
+        XCTAssertTrue(isOdd(UInt64(5)))
     }
 
     func testClamp() {

@@ -16,7 +16,7 @@ final class Algo: XCTestCase {
     }
 
     func testBinarySearch() {
-        var arr = [6, 3, 9, 2, 1, 16, 14, 20]
+        let arr = [6, 3, 9, 2, 1, 16, 14, 20]
         XCTAssertEqual(binarySerch(arr, target: 2), 3)
         XCTAssertEqual(binarySerch(arr, target: 23), -1)
     }
