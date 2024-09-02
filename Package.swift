@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "ChaiUtil",
     platforms: [
-        .macOS(.v12), .iOS(.v13), .watchOS(.v6), .tvOS(.v13)
+        .macOS(.v14), .iOS(.v13), .watchOS(.v6), .tvOS(.v13)
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
